@@ -1,0 +1,60 @@
+1. REST API запрос для страницы с магазинами-партнерами:
+GET api/v1/menu/partners HTTP/1.1
+
+2. Пример ответа:
+{
+    "success": true,
+    "error_code": null,
+    "error_message": null,
+    "data": {
+        "items": [
+            {
+                "id": 1,
+                "name": "METRO",
+                "image_url": "string",
+                "external_url": "https://online.metro-cc.ru",
+                "delivery": {
+                    "type": "slot",
+                    "day": "today",
+                    "from": "21:00",
+                    "to": "23:00"
+                }
+            },
+            {
+                "id": 2,
+                "name": "Ашан",
+                "image_url": "string",
+                "external_url": "https://www.auchan.ru",
+                "delivery": {
+                    "type": "slot",
+                    "day": "today",
+                    "from:": "18:00", 
+                    "to": "20:00"
+                }
+            },
+            {
+                "id": 3,
+                "name": "ВкусВилл",
+                "image_url": "string",
+                "external_url": "https://vkusvill.ru",
+                "delivery": {
+                    "type": "express", 
+                    "min_minutes": 20,
+                    "max_minutes": 60
+                }
+            },
+            {
+                "id": 4,
+                "name": "ВИКТОРИЯ", 
+                "image_url": "string",
+                "external_url": "https://victoria-group.ru",
+                "delivery": {
+                    "type": "slot",
+                    "day": "today",
+                    "from": "17:00",
+                    "to": "19:00"
+                }
+            }
+        ]
+    }
+}
