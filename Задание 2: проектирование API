@@ -1,5 +1,8 @@
 1. REST API запрос для страницы с магазинами-партнерами:
 GET api/v1/menu/partners HTTP/1.1
+Host: https://petryshka-zelenaya.ru
+Content-type: application/json
+Autorization: API Key
 
 2. Пример ответа:
 {
